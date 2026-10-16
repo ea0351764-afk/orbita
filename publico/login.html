@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | ÓRBITA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="index.html" class="logo"><span class="logo-icono">🪐</span><span class="logo-texto">ÓRBITA</span></a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolios-publicos.html">Portafolios</a></li>
+                <li><a href="login.html" class="activo">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="pagina-titulo">
+            <div class="contenedor"><h1>Bienvenido de Nuevo</h1></div>
+        </section>
+        <section class="pagina-contenido" style="max-width: 450px;">
+            <form class="formulario" id="formLogin">
+                <div class="campo">
+                    <label for="usuario">Nombre de Usuario</label>
+                    <input type="text" id="usuario" required>
+                </div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+                    <input type="password" id="contrasena" required>
+                </div>
+                <button type="submit" class="btn primario" style="width: 100%;">Ingresar a mi Portafolio</button>
+                <p style="text-align: center; margin-top: 1rem;">¿No tienes cuenta? <a href="registro.html" style="color: var(--primario); font-weight: 500;">Crear cuenta nueva</a></p>
+                <p id="mensajeError" style="color: #ef4444; text-align: center; display: none;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>© 2026 ÓRBITA — Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

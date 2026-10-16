@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ÓRBITA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="index.html" class="logo"><span class="logo-icono">🪐</span><span class="logo-texto">ÓRBITA</span></a>
+            <ul class="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="acerca.html">Acerca de</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="portafolios-publicos.html">Portafolios</a></li>
+    <li><a href="contacto.html" class="activo">Contacto</a></li>
+    <li><a href="login.html" style="background: var(--primario); color: white; padding: 0.5rem 1rem; border-radius: 6px;">🔑 Iniciar Sesión</a></li>
+</ul>
+        </div>
+    </nav>
+
+    <main style="margin: 15px">
+        <section class="titulo">
+            <div class="contenedor"><h1>Contáctanos</h1></div>
+        </section>
+
+        <section class="informacion-contenido">
+            <p>¿Tienes alguna idea o algun proyecto en mente? ¡Nos encantaria saber de ti!</p>
+            <form class="formulario">
+                <div class="campo">
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="email">Tu Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <div class="campo">
+                    <label for="archivo">Adjuntar Archivo audiovisual o PDF (opcional):</label>
+                    <div class="subir-archivos">
+                       🗃️ <input type="file" id="misArchivos" name="archivo" multiple accept="image/*,video/*,.pdf" aria-describedby="ayuda-archivos">🗃️
+                            <p id="ayuda-archivos" class="texto-ayuda">Subir Archivo. Tamaño máximo: 10MB</p>
+                            <div id="lista-archivos" class="lista-archivos" style="margin-top: 1rem;"></div>
+
+                    </div>
+                    
+                </div>
+                <button type="submit">📤Enviar Mensaje📤</button>
+            </form>
+            <p>Puedes contactarnos a través de los siguientes medios:</p>
+            <ul>
+                <li>Correo electrónico: info@orbita.com</li>
+                <li>Teléfono: +598 2123 4567</li>
+                <li>Dirección: Calle Principal 123, Montevideo, Uruguay</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>&copy;2026 ÓRBITA - Todos los derechos reservados</p>
+            <div class="enlaces-pie">
+                <a href="acerca.html">Acerca</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

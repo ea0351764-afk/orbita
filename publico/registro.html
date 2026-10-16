@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cuenta | ÓRBITA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="index.html" class="logo"><span class="logo-icono">🪐</span><span class="logo-texto">ÓRBITA</span></a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolios-publicos.html">Portafolios</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="pagina-titulo">
+            <div class="contenedor"><h1>Crear tu Cuenta</h1></div>
+        </section>
+        <section class="pagina-contenido" style="max-width: 450px;">
+            <form class="formulario" id="formRegistro">
+                <div class="campo">
+                    <label for="nombreCompleto">Tu Nombre Completo</label>
+                    <input type="text" id="nombreCompleto" required>
+                </div>
+                <div class="campo">
+                    <label for="nuevoUsuario">Nombre de Usuario</label>
+                    <input type="text" id="nuevoUsuario" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="nuevaContrasena">Contraseña</label>
+                    <input type="password" id="nuevaContrasena" required>
+                </div>
+                <div class="campo">
+                    <label for="biografia">Tu Biografía (opcional)</label>
+                    <textarea id="biografia" rows="3" placeholder="Cuéntanos algo sobre ti y tu trabajo..."></textarea>
+                </div>
+                <button type="submit" class="btn primario" style="width: 100%;">Crear mi Cuenta</button>
+                <p style="text-align: center; margin-top: 1rem;">¿Ya tienes cuenta? <a href="login.html" style="color: var(--primario); font-weight: 500;">Iniciar sesión</a></p>
+                <p id="mensajeRegistro" style="text-align: center; display: none;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>© 2026 ÓRBITA — Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

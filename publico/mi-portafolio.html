@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | ÓRBITA</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navegacion">
+        <div class="contenedor">
+            <a href="index.html" class="logo"><span class="logo-icono">🌐</span><span class="logo-texto">ÓRBITA</span></a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="portafolios-publicos.html">Portafolios</a></li>
+                <li><a href="#" id="btnCerrarSesion" style="color: #ef4444;">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="contenidoPortafolio" style="display: none;">
+        <!-- Perfil del Usuario -->
+        <section class="pagina-titulo" style="padding-bottom: 1rem;">
+            <div class="contenedor">
+                <h1 id="nombreUsuarioPortafolio"></h1>
+                <p id="bioUsuario" style="color: var(--texto-claro); margin-top: 0.5rem;"></p>
+            </div>
+        </section>
+
+        <!-- Formulario para Agregar Proyectos -->
+        <section class="pagina-contenido" style="padding-top: 1rem;">
+            <div style="background: white; padding: 1.5rem; border-radius: var(--radio); box-shadow: var(--sombra); margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1rem;">➕ Agregar Nuevo Proyecto</h3>
+                <form class="formulario" id="formProyecto" style="margin-top: 0;">
+                    <div class="campo">
+                        <label for="tituloProyecto">Título del Proyecto</label>
+                        <input type="text" id="tituloProyecto" required>
+                    </div>
+                    <div class="campo">
+                        <label for="descripcionProyecto">Descripción</label>
+                        <textarea id="descripcionProyecto" rows="4" required></textarea>
+                    </div>
+                    <div class="campo">
+                        <label for="imagenProyecto">Enlace de Imagen (opcional)</label>
+                        <input type="url" id="imagenProyecto" placeholder="https://ejemplo.com/imagen.jpg">
+                    </div>
+                    <div class="campo">
+                        <label style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="esPublico" checked>
+                            🌐 Proyecto Público (cualquiera puede verlo)
+                        </label>
+                        <p style="font-size: 0.85rem; color: var(--texto-claro); margin-left: 1.5rem;">Si desmarcas esto, solo tú podrás ver este proyecto</p>
+                    </div>
+                    <button type="submit" class="btn primario">Guardar Proyecto</button>
+                </form>
+            </div>
+
+            <!-- Lista de Mis Proyectos -->
+            <h2>Mis Proyectos</h2>
+            <div id="listaMisProyectos" class="grid-caracteristicas" style="margin-top: 1.5rem;"></div>
+            <p id="sinProyectos" style="text-align: center; color: var(--texto-claro); padding: 2rem;">Aún no has creado ningún proyecto. ¡Agrega el primero arriba! ✨</p>
+        </section>
+    </main>
+
+    <!-- Mensaje si no hay sesión -->
+    <div id="sinSesion" style="text-align: center; padding: 4rem 2rem; display: none;">
+        <h2>🔒 Necesitas iniciar sesión</h2>
+        <p style="color: var(--texto-claro); margin: 1rem 0;">Por favor inicia sesión para ver y editar tu portafolio</p>
+        <a href="login.html" class="btn primario">Iniciar Sesión</a>
+    </div>
+
+    <footer class="pie">
+        <div class="contenedor">
+            <p>© 2026 ÓRBITA — Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
